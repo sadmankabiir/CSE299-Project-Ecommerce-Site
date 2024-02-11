@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rushi - Accessories</title>
+
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <section id="accessories-products"></section>
+
+    <section id="shoes"></section>
+
+
+    <footer></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+
+    <script>
+      getProducts('shoes').then(data => createProductSlider(data, '#accessories-products', 'Accessories'))
+      getProducts('shoes').then(data => createProductSlider(data, '#shoes', 'Shoes'))
+    </script>
+  </body>
+</html>

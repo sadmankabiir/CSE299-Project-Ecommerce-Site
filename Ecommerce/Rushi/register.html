@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushi : Register account</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <img src="img/loading.gif" class="loader" alt="">
+
+    <div class="container">
+        <img src="img/logo.jpg" class="logo" alt="">
+
+        <div class="alert-box">
+            <img src="img/alert.gif" class="alert-image" alt="">
+            <p class="alert-message">Error message</p>
+        </div>
+        <div>
+            <p>Username</p>
+            <input type="text" autocomplete="off" id="username" placeholder="Enter username">
+            <p>Full Name</p>
+            <input type="text" autocomplete="off" id="FullName" placeholder="Enter fullName">
+            <p>Phone Number</p>
+            <input type="text" autocomplete="off" id="number" placeholder="Enter Phone number">
+            <p>Email</p>
+            <input type="email" autocomplete="off" id="email" placeholder="Enter email">
+            <p>Create Password</p>
+            <input type="password" autocomplete="off" id="password" placeholder="Enter password">
+            <p>Confirm Password</p>
+            <input type="password" autocomplete="off" id="confirm-password" placeholder="Retype password">
+            <button class="submit-btn">Register</button>
+        </div>
+        <a href="/login" class="link">Already have an account?</a>
+    </div>
+    <script src="js/token.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
