@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rushi - Find it, Love it, Buy it</title>
+
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <header class="hero-section">
+      <div class="content">
+        <p class="sub-heading">best clothing collection</p>
+      </div>
+    </header>
+    <section id="men-tshirt-products"></section>
+    <section id="women-products"></section>
+    <section id="shoes-products"></section>
+
+
+    <section class="collection-container">
+      <a href="#" class="collection">
+        <img src="img/women-collection.png" alt="" />
+        <p class="collection-title">
+          women <br />
+          apparels
+        </p>
+      </a>
+      <a href="#" class="collection">
+        <img src="img/men-collection.png" alt="" />
+        <p class="collection-title">
+          men <br />
+          apparels
+        </p>
+      </a>
+      <a href="#" class="collection">
+        <img src="img/accessories-collection.png" alt="" />
+        <p class="collection-title">
+          accessories <br />
+          apparels
+        </p>
+      </a>
+    </section>
+
+    <section id="men-tshirt"></section>
+
+
+    <footer></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+
+    <script>
+      getProducts('Men Tshirt').then(data => createProductSlider(data, '#men-tshirt-products', 'Men T-shirt'))
+      getProducts('Women Dress').then(data => createProductSlider(data, '#women-products', 'Dress for Women'))
+      getProducts('shoes').then(data => createProductSlider(data, '#shoes-products', 'Dress for Women'))
+      getProducts('Men Tshirt').then(data => createProductSlider(data, '#men-tshirt', 'Men only T-shirt'))
+    </script>
+  </body>
+</html>

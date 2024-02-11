@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/seller.css">
+    
+</head>
+<div>
+    <img src="img/loading.gif" class="loader" alt="">
+    <div class="alert-box">
+        <img src="img/alert.gif" class="alert-image" alt="">
+        <p class="alert-message">Error message</p>
+    </div>
+    <img src="img/logo.jpg" class="logo" alt="">
+
+    <!-- become seller -->
+    <div class="become-seller hide">
+        <p class="heading">become a seller</p>
+        <p class="des">You can sell and manage your products</p>
+        <button class="btn" id="apply-btn">apply for seller account</button>
+    </div>
+    <!-- apply form -->
+    <div class="apply-form hide">
+        <p>Business Name</p>
+        <input type="text" id="business-name" placeholder="Business/company/shop Name">
+        <p>Business Address</p>
+        <textarea id="business-add" placeholder="address"></textarea>
+        <p>Information</p>
+        <textarea id="about" placeholder="Business information"></textarea>
+        <p>Phone Number</p>
+        <input type="text" id="number" placeholder="Enter Phone number">
+        <button class="submit-btn" id="apply-form-btn">apply</button>
+    </div>
+    <!-- product list -->
+    <div class="product-listing hide">
+        <div class="add-product">
+            <p class="add-product-title">Add Product</p>
+            <button class="btn" onclick="location.href = '/add-product'">Add Product</button>
+        </div>
+        <img src="img/noProduct.png" class="no-product-image hide" alt="">
+    </div>
+    <!-- delete alert -->
+    <div class="delete-alert">
+        <div class="alert">
+        <button class="close-btn"><img src="img/close.png" alt=""></button>
+        <img src="img/delete-warning.png" class="delete-svg" alt="">
+        <p class="text">Are you sure you want to delete this product?</p>
+        <button class="delete-btn">Delete</button>
+    </div>
+    </div>
+
+
+
+    <!-- product cards -->
+    <div class="product-container">
+        <!-- <div class="product-card">
+            <div class="product-image">
+                <span class="tag">Draft</span>
+                <img src="img/product8.jpg" class="product-thumb" alt="" />
+                <button class="card-action-btn edit-btn"><img src="img/edit.png" alt=""</button>
+                <button class="card-action-btn open-btn"><img src="img/open.png" alt=""</button>
+                <button class="card-action-btn delete-popup-btn"><img src="img/delete.png" alt=""</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Product 1</h2>
+                <p class="product-short-description">Long Sleeve Casual Shirt</p>
+                <span class="discount-price">1200 bdt</span>
+                <span class="actual-price">2000 bdt</span>
+            </div>
+        </div> -->
+    </div>  
+
+
+    <script src="js/token.js"></script>
+    <script src="js/createProduct.js"></script>
+    <script src="js/seller.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.four-0-four-image {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  max-width: 50%;
+  max-height: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.four-0-four-msg {
+  text-align: center;
+  text-transform: capitalize;
+  color: #383838;
+}
+
+.four-0-four-msg a {
+  color: #383838;
+}
